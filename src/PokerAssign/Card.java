@@ -6,8 +6,8 @@ package PokerAssign;
  */
 
 public class Card {
-    String suit;
-    int rank;
+    private String suit;
+    private int rank;
 
     //Constructor
     public Card(int suitNumber, int rank){
@@ -84,16 +84,16 @@ public class Card {
                 rankValue = "Ten of ";
                 break;
             case 11:
-                rankValue = "Eleven of ";
+                rankValue = "Joker of ";
                 break;
             case 12:
-                rankValue = "Twelve of ";
+                rankValue = "Queen of ";
                 break;
             case 13:
-                rankValue = "Thirteen of ";
+                rankValue = "King of ";
                 break;
             case 14:
-                rankValue = "Fourteen of ";
+                rankValue = "Ace of ";
                 break;
             default:
                 throw new IllegalStateException("Unexpected Rank value: " + rank);

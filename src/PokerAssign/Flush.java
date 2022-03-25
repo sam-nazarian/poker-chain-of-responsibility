@@ -22,7 +22,7 @@ public class Flush implements Handler{
 
         //check if all values all same suit
         for(int i=1; i<hand.getHandSize(); i++){
-            if(!handList.get(0).suit.equals(handList.get(i).suit)) {
+            if(!handList.get(0).getSuit().equals(handList.get(i).getSuit())) {
                 chain.evaluate(hand); //go to next chain
                 return;//leave function
             }

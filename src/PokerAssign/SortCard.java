@@ -14,9 +14,9 @@ public class SortCard implements Comparator<Card> {
 
     @Override
     public int compare(Card o1, Card o2) {
-        if(o1.rank < o2.rank) {
+        if(o1.getRank() < o2.getRank()) {
             return -1;
-        }else if(o1.rank > o2.rank) {
+        }else if(o1.getRank() > o2.getRank()) {
             return 1;
         }else{
             return 0;

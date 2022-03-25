@@ -11,7 +11,7 @@ import java.util.List;
 public class Hand {
     private final int HAND_SIZE = 5;
 
-    List<Card> hand;
+    private List<Card> hand;
 
     //constructor
     public Hand(){

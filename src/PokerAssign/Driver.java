@@ -48,8 +48,9 @@ public class Driver {
             System.out.println();//line break
         }
 
-        //PLEASE USE THE BELOW TO TEST THE HANDLER'S CHILDREN CLASSES
-        //BUT KEEP IN MIND, RANKS OF AN ARRAYLIST NEED TO BE IN ORDER OTHERWISE IT WON'T WORK
+        //YOU CAN USE THE BELOW CODE TO TEST HANDLER'S CHILDREN CLASSES
+        //BUT KEEP IN MIND, RANKS OF AN ARRAYLIST NEED TO BE IN ORDER(ascending) OTHERWISE IT WON'T WORK
+        //also remember 11=J, 12=Q, 13=K, 14=A
         /*
         //create a hand where values are custom, for testing Handler's children classes
         Hand customHand = new Hand();
@@ -59,6 +60,7 @@ public class Driver {
         handList.add(new Card(1,4));
         handList.add(new Card(2,5));
         handList.add(new Card(2,7));
+
         customHand.setHand(handList);
 
         System.out.println(customHand);
