@@ -1,5 +1,10 @@
 package PokerAssign;
 
+/**
+ * @author Saman Fathnazarian
+ * StudentNumber: 3119137
+ */
+
 import java.util.List;
 
 public class FullHouse implements Handler {
@@ -35,7 +40,7 @@ public class FullHouse implements Handler {
     }
 }
 
-//  Instead of above, I could also do this, I left it for myself as a note. TA you can ignore.
+//  Instead of above, I could also do this, I left it for myself as a note. you can ignore the code below.
 
 //it's four of a kind, if 1'st & 3rd elms are same & 4th & 5th elms are also same
 

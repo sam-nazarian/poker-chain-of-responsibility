@@ -1,5 +1,10 @@
 package PokerAssign;
 
+/**
+ * @author Saman Fathnazarian
+ * StudentNumber: 3119137
+ */
+
 import java.util.*;
 
 public class Deck {
@@ -52,21 +57,6 @@ public class Deck {
         }
     }
 
-//	public void shuffle()
-//	{
-//		for (int x = 0; x <= SHUFFLE_AMOUNT; x++)
-//		{
-//			int number1 = rnd.nextInt(DECK_SIZE); //generates random value from 0-51
-//			int number2 = rnd.nextInt(DECK_SIZE);
-//
-//			//swap number 1 & number 2, due this SHUFFLE_EXCHANGES amount of times
-//			Card temp = deck[number1];
-//			deck[number1] = deck[number2];
-//			deck[number2] = temp;
-//		}
-//	}
-
-
     //passes array to hand
     void dealHand() throws Exception {
         List<Card> handList = new ArrayList<>();
@@ -114,16 +104,3 @@ public class Deck {
                 '}';
     }
 }
-
-
-//    @Override
-//    public String toString() {
-//        return "Deck{" +
-//                ", hand=" + hand +
-//                ", handSize=" + handSize +
-//                ", handCounter=" + handCounter +
-////                "DECK_SIZE=" + DECK_SIZE +
-////                ", deck=" + Arrays.toString(deck) +
-//                '}';
-//    }
-//}

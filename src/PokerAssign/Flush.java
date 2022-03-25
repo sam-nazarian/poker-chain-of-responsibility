@@ -1,5 +1,10 @@
 package PokerAssign;
 
+/**
+ * @author Saman Fathnazarian
+ * StudentNumber: 3119137
+ */
+
 import java.util.List;
 
 public class Flush implements Handler{

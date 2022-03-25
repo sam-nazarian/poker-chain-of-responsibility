@@ -1,5 +1,10 @@
 package PokerAssign;
 
+/**
+ * @author Saman Fathnazarian
+ * StudentNumber: 3119137
+ */
+
 import java.util.List;
 
 public class HighCard implements Handler{
@@ -18,7 +23,7 @@ public class HighCard implements Handler{
         //no next here, this is the last Object in chain
 
         //since cards are ordered in ascending order of ranks, the highest rank is the last rank
-        System.out.println("You Have A High Card! Your high card is: " + handList.get(4).getRank());
+        System.out.println("You Have A High Card! Your high card is: " + handList.get(4));
         return;
     }
 }

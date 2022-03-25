@@ -1,5 +1,10 @@
 package PokerAssign;
 
+/**
+ * @author Saman Fathnazarian
+ * StudentNumber: 3119137
+ */
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,10 +38,7 @@ public class Driver {
         deck.fillDeck();
         deck.shuffle();
 
-
-//        System.out.println(deck);
-        //Getting Hand
-
+        //Dealing A Hand 10 Times & Getting Their Evaluation
         System.out.println();//add a line break at beginning, makes it easier to read
         for(int i=0; i<10; i++) {
             deck.dealHand();
@@ -45,16 +47,6 @@ public class Driver {
             c1.evaluate(hand);
             System.out.println();//line break
         }
-//            deck.dealHand();
-//            Hand hand2 = deck.getHand();
-
-
-
-//            System.out.println(hand2);
-//            c1.evaluate(hand2);
-
-        //later, forloop to run different hands
-
 
         //PLEASE USE THE BELOW TO TEST THE HANDLER'S CHILDREN CLASSES
         //BUT KEEP IN MIND, RANKS OF AN ARRAYLIST NEED TO BE IN ORDER OTHERWISE IT WON'T WORK
@@ -74,27 +66,3 @@ public class Driver {
         */
     }
 }
-
-//        Deck deck = new Deck();
-//        deck.fillDeck();
-//        deck.shuffle();
-//        deck.dealHand();
-//        Hand hand = deck.getHand();
-//        System.out.println(hand);
-//        deck.dealHand();
-//        deck.dealHand();
-//        deck.dealHand();
-//        deck.dealHand();
-//        deck.dealHand();
-//        deck.dealHand();
-//        deck.dealHand();
-//        deck.dealHand();
-//        deck.dealHand();
-//        System.out.println(hand);
-
-
-//        deck.dealHand();
-//        deck.dealHand();
-//        deck.dealHand();
-//        System.out.println(deck.toString());
-//        System.out.println(hand.getHand()[0].suit);

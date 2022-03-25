@@ -1,5 +1,10 @@
 package PokerAssign;
 
+/**
+ * @author Saman Fathnazarian
+ * StudentNumber: 3119137
+ */
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -8,15 +13,10 @@ public class Hand {
 
     List<Card> hand;
 
+    //constructor
     public Hand(){
-        //setter will set the hand array
+        //setter will set the hand array, so constructor does nothing
     }
-
-//    public Hand(Card[] hand) {
-//        this.hand = hand;
-//        //= new Card[HAND_SIZE]
-//        // hand = new Card[HAND_SIZE];
-//    }
 
     //Getters & setters
     public int getHandSize() {
@@ -31,9 +31,6 @@ public class Hand {
 
     @Override
     public String toString() {
-        return "Hand{" +
-                "HAND_SIZE=" + HAND_SIZE +
-                ", hand=" + hand +
-                '}';
+        return hand.toString(); //returns hand List, look at implementation of ToString in Card to see how this works
     }
 }

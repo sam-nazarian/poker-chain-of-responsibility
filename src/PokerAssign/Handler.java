@@ -1,10 +1,11 @@
 package PokerAssign;
 
+/**
+ * @author Saman Fathnazarian
+ * StudentNumber: 3119137
+ */
+
 public interface Handler {
     void setNext(Handler nextChain);
     void evaluate(Hand hand);
 }
-
-//    private Handler setNext;
-//    int a = 0;
-//    void processRequest(Purchase purchase);

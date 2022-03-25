@@ -1,5 +1,10 @@
 package PokerAssign;
 
+/**
+ * @author Saman Fathnazarian
+ * StudentNumber: 3119137
+ */
+
 public class Card {
     String suit;
     int rank;
@@ -26,7 +31,7 @@ public class Card {
         }
 
         this.suit = suitValue;
-        this.rank = rank;
+        this.rank = rank; //11=J, 12=Q, 13=K, 14=A
     }
 
     //Setters & Getters
@@ -45,9 +50,59 @@ public class Card {
 
     @Override
     public String toString() {
-        return "Card{" +
-                "suit='" + suit + '\'' +
-                ", rank=" + rank +
-                '}';
+        String rankValue;
+
+        switch (rank) {
+            case 1:
+                rankValue = "One of ";
+                break;
+            case 2:
+                rankValue = "Two of ";
+                break;
+            case 3:
+                rankValue = "Three of ";
+                break;
+            case 4:
+                rankValue = "Four of ";
+                break;
+            case 5:
+                rankValue = "Five of ";
+                break;
+            case 6:
+                rankValue = "Six of ";
+                break;
+            case 7:
+                rankValue = "Seven of ";
+                break;
+            case 8:
+                rankValue = "Eight of ";
+                break;
+            case 9:
+                rankValue = "Nine of ";
+                break;
+            case 10:
+                rankValue = "Ten of ";
+                break;
+            case 11:
+                rankValue = "Eleven of ";
+                break;
+            case 12:
+                rankValue = "Twelve of ";
+                break;
+            case 13:
+                rankValue = "Thirteen of ";
+                break;
+            case 14:
+                rankValue = "Fourteen of ";
+                break;
+            default:
+                throw new IllegalStateException("Unexpected Rank value: " + rank);
+        }
+
+        StringBuffer sb = new StringBuffer();
+
+        sb.append(rankValue).append(suit);
+
+        return sb.toString();
     }
 }
